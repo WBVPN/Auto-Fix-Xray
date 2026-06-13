@@ -1,6 +1,3 @@
-# Auto-Fix-Xray
-Script otomatis untuk mengatasi V2Ray unable to connect
-
 # 🚀 Auto Maintenance Script for VPN VPS (Xray/V2ray)
 
 Solusi ampuh dan ringan untuk mengatasi masalah V2Ray/Xray yang sering mengalami *stuck* atau *unable to connect* setelah beberapa jam berjalan. Sistem ini bekerja otomatis untuk me-refresh koneksi dan membersihkan RAM tanpa perlu me-reboot VPS.
