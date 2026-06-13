@@ -56,29 +56,3 @@ wget -qO- https://raw.githubusercontent.com/WBVPN/Auto-Fix-Xray/refs/heads/main/
 ```
 
 ---
-
-## 🔍 Cara Cek Status Pemasangan
-
-Untuk memastikan sistem sudah berjalan di VPS kamu, gunakan dua perintah ini:
-
-1. **Cek Jadwal (Cronjob):**
-```bash
-   crontab -l
-   ```
-   *(Pastikan ada baris `clear-ram.sh` dan `restart xray` di bagian paling bawah).*
-
-2. **Cek Bukti Pembersihan RAM:**
-```bash
-   cat /root/clear-ram.log
-   ```
-   *(Catatan: Log ini baru akan muncul setelah script melewati jam genap pertamanya, misalnya jam 10:00, 12:00, dst).*
-
----
-
-## 🗑️ Cara Uninstall (Hapus Script)
-
-Jika sewaktu-waktu ingin menghapus script dan mencabut jadwal otomatisnya dari VPS (tanpa mengganggu settingan VPS lainnya), jalankan perintah ini:
-
-```bash
-crontab -l | grep -v "/root/clear-ram.sh" | grep -v "systemctl restart xray" | crontab - && rm -f /root/clear-ram.sh /root/clear-ram.log && echo "Uninstall Selesai!"
-```
