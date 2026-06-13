@@ -14,4 +14,5 @@ Solusi ampuh dan ringan untuk mengatasi masalah V2Ray/Xray yang sering mengalami
 Cukup *copy* dan *paste* perintah pendek di bawah ini ke terminal VPS kamu, lalu tekan **Enter**. Script akan berjalan dan memasang semuanya secara otomatis:
 
 ```bash
-wget -qO- [https://raw.githubusercontent.com/WBVPN/Auto-Fix-Xray/refs/heads/main/install.sh](https://raw.githubusercontent.com/WBVPN/Auto-Fix-Xray/refs/heads/main/install.sh) | bash
+wget -qO- https://raw.githubusercontent.com/WBVPN/Auto-Fix-Xray/refs/heads/main/install.sh | bash
+
