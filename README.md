@@ -51,8 +51,3 @@ Jika sewaktu-waktu ingin menghapus script dan mencabut jadwal otomatisnya dari V
 ```bash
 crontab -l | grep -v "/root/clear-ram.sh" | grep -v "systemctl restart xray" | crontab - && rm -f /root/clear-ram.sh /root/clear-ram.log && echo "Uninstall Selesai!"
 ```
-
-wget -qO- https://raw.githubusercontent.com/WBVPN/Auto-Fix-Xray/refs/heads/main/install.sh | bash
-```
-
----
